@@ -1,52 +1,51 @@
-# 📌 Playwright Test Automation Project
+# 📌  Playwright Test Automation Project
 
-Bu proje, **Playwright** ve **TypeScript** kullanarak oluşturulmuş bir test otomasyon projesidir. Projede, web uygulamalarının kullanıcı senaryolarını test etmek için modern test otomasyonu yöntemleri uygulanmıştır.
+This project is a test automation framework built using **Playwright** and **TypeScript**. It applies modern test automation techniques to validate user scenarios on web applications.
+---
+
+## 🚀 Project Overview
+
+- **Test Automation  Tool:** Playwright
+- **Programming  Language:** TypeScript
+- **Test Framework:** Playwright Test Runner
+- **POM (Page Object Model) :** Implemented
+- **Reporting:** Playwright HTML Report
 
 ---
 
-## 🚀 Proje İçeriği
+## 📂 Setup and Running Tests
 
-- **Test Otomasyon Aracı:** Playwright
-- **Programlama Dili:** TypeScript
-- **Test Çerçevesi:** Playwright Test Runner
-- **POM (Page Object Model) Kullanımı:** Var
-- **Raporlama:** Playwright HTML Report
-
----
-
-## 📂 Kurulum ve Çalıştırma
-
-### 1️⃣ Projeyi Klonlayın
+### 1️⃣  Clone the Repository
 ```bash
 git clone https://github.com/kazimsahinn/Automation-Exercise.git
 cd Automation-Exercise
 ```
 
-### 2️⃣ Gerekli Bağımlılıkları Kurun
+### 2️⃣  Install Dependencies
 ```bash
 npm install
 ```
 
-### 3️⃣ Testleri Çalıştırın
+### 3️⃣  Run the Tests
 ```bash
 npx playwright test
 ```
 
-### 4️⃣ Test Sonuçlarını Raporla Görüntüleyin
+### 4️⃣ View the Test Report
 ```bash
 npx playwright show-report
 ```
 
 ---
 
-## 🏗 Kullanılan Teknolojiler
+## 🏗 Technologies Used
 - [Playwright](https://playwright.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Node.js](https://nodejs.org/)
 
 ---
 
-## 📌 Proje Yapısı
+## 📌 Project Structure
 ```plaintext
 📂 automation-exercise
  ┣ 📂 pages
@@ -63,10 +62,10 @@ npx playwright show-report
 
 ---
 
-## 📞 İletişim
-Herhangi bir sorunuz veya öneriniz varsa benimle iletişime geçebilirsiniz:
+## 📞 Contact
+If you have any questions or suggestions, feel free to reach out:
 - 📧 **Email:** kazmshn@gmail.com
 - 🔗 **LinkedIn:** [Kazım Şahin](https://www.linkedin.com/in/kazimsahin/)
 
-🚀 **İyi testler!**
+🚀 **Happy Testing!**
 
