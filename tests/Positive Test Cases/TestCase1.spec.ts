@@ -49,12 +49,12 @@ test.describe.serial('Test Case 1: Register User', () => {
         await cleanupPage(page);
     });
 
-    test('Register User Test', async ({ page }) => {
+    test('Register User and Delete Test', async ({ page }) => {
 
        await homePage.clickSignupLoginButton();
        await signLoginPage.verifyNewUserSignupVisibility();
        await signLoginPage.inputNewUserName('Kazim');
-       await signLoginPage.inputNewUserEmail('test789@test.com');
+       await signLoginPage.inputNewUserEmail('test787@test.com');
        await signLoginPage.clickSignUpButton();
        await signLoginPage.verifyEnterAccountInformationVisibility();
        await signLoginPage.checkGenderTitle();

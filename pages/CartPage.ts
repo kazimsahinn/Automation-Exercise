@@ -62,6 +62,8 @@ export class CartPage {
 
     }
 
+
+
     async verifyPaymentVisibility(){
         const paymentTitle = await this.page.locator('//h2[@class=\'heading\']');
         await expect(paymentTitle).toBeVisible();
