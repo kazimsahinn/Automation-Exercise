@@ -1,0 +1,592 @@
+{
+	"info": {
+		"_postman_id": "dd23c10b-212f-48dd-b640-bc00be9e7f54",
+		"name": "Automation Exercise APİ Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31110806"
+	},
+	"item": [
+		{
+			"name": "Get All Products List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/productsList",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"productsList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST To All Products List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/productsList",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"productsList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Brands List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/brandsList",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"brandsList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT To All Brands List",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/brandsList",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"brandsList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST To Search Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "search_product",
+							"value": "tshirt",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/searchProduct",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"searchProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST To Search Product without search_product parameter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "search_product",
+							"value": "tshirt",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/searchProduct",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"searchProduct"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST To Verify Login with valid details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "test6544@test.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/verifyLogin",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"verifyLogin"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST To Verify Login without email parameter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "test6544@test.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/verifyLogin",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"verifyLogin"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE To Verify Login",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "test6544@test.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/verifyLogin",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"verifyLogin"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST To Verify Login with invalid details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "test65444@test.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234564",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/verifyLogin",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"verifyLogin"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST To Create/Register User Account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Kazim",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test654443@test.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234564",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Mr",
+							"type": "text"
+						},
+						{
+							"key": "birth_date",
+							"value": "29",
+							"type": "text"
+						},
+						{
+							"key": "birth_month",
+							"value": "07",
+							"type": "text"
+						},
+						{
+							"key": "birth_year",
+							"value": "1994",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "Kazim",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Sahin",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "Ard",
+							"type": "text"
+						},
+						{
+							"key": "address1",
+							"value": "test adress",
+							"type": "text"
+						},
+						{
+							"key": "address2",
+							"value": "test adress 2",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "Turkey",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "34194",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "Istanbul",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Istanbul",
+							"type": "text"
+						},
+						{
+							"key": "mobile_number",
+							"value": "905359244468",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/createAccount",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"createAccount"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE METHOD To Delete User Account",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Kazim",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test654443@test.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234564",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "Mr",
+							"type": "text"
+						},
+						{
+							"key": "birth_date",
+							"value": "29",
+							"type": "text"
+						},
+						{
+							"key": "birth_month",
+							"value": "07",
+							"type": "text"
+						},
+						{
+							"key": "birth_year",
+							"value": "1994",
+							"type": "text"
+						},
+						{
+							"key": "firstname",
+							"value": "Kazim",
+							"type": "text"
+						},
+						{
+							"key": "lastname",
+							"value": "Sahin",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "Ard",
+							"type": "text"
+						},
+						{
+							"key": "address1",
+							"value": "test adress",
+							"type": "text"
+						},
+						{
+							"key": "address2",
+							"value": "test adress 2",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "Turkey",
+							"type": "text"
+						},
+						{
+							"key": "zipcode",
+							"value": "34194",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "Istanbul",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "Istanbul",
+							"type": "text"
+						},
+						{
+							"key": "mobile_number",
+							"value": "905359244468",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/deleteAccount?email=test654443@test.com&password=1234564",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"deleteAccount"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "test654443@test.com"
+						},
+						{
+							"key": "password",
+							"value": "1234564"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET user account detail by email",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "test6544@test.com",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{baseURL}}/api/getUserDetailByEmail?email=test6544@test.com",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"getUserDetailByEmail"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "test6544@test.com"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
